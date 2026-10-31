@@ -1,0 +1,6 @@
+{
+  "name": "VANDER STORE",
+  "description": "Tienda virtual de artículos para la preparación y prevención ante emergencias, lluvias intensas e inundaciones. Preparados hoy, protegidos mañana.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

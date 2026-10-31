@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VANDER STORE | Preparados hoy, protegidos mañana</title>
+  <meta name="description" content="Tienda virtual de artículos para la preparación y prevención ante emergencias, lluvias intensas e inundaciones. Preparados hoy, protegidos mañana.">
+  <meta property="og:title" content="VANDER STORE | Preparados hoy, protegidos mañana">
+  <meta property="og:description" content="Tienda virtual de artículos para la preparación y prevención ante emergencias, lluvias intensas e inundaciones. Preparados hoy, protegidos mañana.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#12304A">
+
+  <!-- Favicon oficial -->
+  <link rel="icon" type="image/svg+xml" href="imagenes/favicon.svg">
+
+  <!-- Tipografías legibles con respaldo nativo inmediato -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos nativa CSS3 -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Lógica interactiva nativa JavaScript ES6+ -->
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <!-- Enlace de salto directo para accesibilidad por teclado -->
+  <a href="#contenido-principal" class="enlace-salto">Saltar al contenido principal</a>
+
+  <!-- 6.1. Barra superior informativa -->
+  <div class="barra-superior" role="region" aria-label="Información rápida de VANDER STORE">
+    <div class="contenedor barra-superior__contenido">
+      <p class="barra-superior__texto">
+        <strong>VANDER STORE</strong> <span aria-hidden="true">|</span> Preparados hoy, protegidos mañana.
+      </p>
+      <a
+        href="https://wa.me/51974436335?text=Hola%2C%20VANDER%20STORE.%20Me%20gustar%C3%ADa%20obtener%20informaci%C3%B3n%20sobre%20sus%20productos."
+        class="barra-superior__whatsapp"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Escribir por WhatsApp oficial al +51 974 436 335"
+      >
+        <svg class="icono-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+        </svg>
+        <span>WhatsApp: +51 974 436 335</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- 6.2. Encabezado principal -->
+  <header class="encabezado" id="encabezado-principal">
+    <div class="contenedor encabezado__barra">
+      <!-- Zona 1: Marca (Logotipo oficial con escudo, verificación y nombre VANDER STORE) -->
+      <a href="#inicio" class="marca" aria-label="VANDER STORE - Ir al inicio">
+        <img
+          src="imagenes/logo.svg"
+          alt="Logotipo VANDER STORE"
+          width="196"
+          height="45"
+          class="marca__logo"
+        >
+        <span class="sr-only">VANDER STORE</span>
+      </a>
+
+      <!-- Zona 2: Menú de navegación -->
+      <nav class="navegacion" id="menu-principal" aria-label="Navegación principal">
+        <ul class="navegacion__lista">
+          <li><a href="#inicio" class="navegacion__enlace">Inicio</a></li>
+          <li><a href="#productos" class="navegacion__enlace">Productos</a></li>
+          <li><a href="#categorias" class="navegacion__enlace">Categorías</a></li>
+          <li><a href="#nosotros" class="navegacion__enlace">Nosotros</a></li>
+          <li><a href="#prevencion" class="navegacion__enlace">Prevención</a></li>
+          <li><a href="#contacto" class="navegacion__enlace">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Zona 3: Acciones (Búsqueda, Acceso rápido a Catálogo, Carrito y Menú Móvil) -->
+      <div class="encabezado__acciones">
+        <button
+          type="button"
+          id="btn-ir-buscador"
+          class="boton-icono"
+          aria-label="Buscar productos en el catálogo"
+          title="Buscar productos"
+        >
+          <svg class="icono-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <a href="#productos" class="boton boton--catalogo-nav">Catálogo</a>
+
+        <button
+          type="button"
+          id="btn-abrir-carrito"
+          class="boton-carrito"
+          aria-label="Abrir carrito de compras, 0 productos"
+          aria-haspopup="dialog"
+          aria-controls="panel-carrito-overlay"
+        >
+          <svg class="icono-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="boton-carrito__texto">Carrito</span>
+          <span class="boton-carrito__contador" id="contador-carrito" aria-live="polite">0</span>
+        </button>
+
+        <button
+          type="button"
+          id="btn-menu-movil"
+          class="boton-menu-movil"
+          aria-label="Abrir menú de navegación"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+        >
+          <svg class="icono-hamburguesa" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <svg class="icono-cerrar-menu" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main id="contenido-principal">
+    <!-- 6.3. Sección principal HERO -->
+    <section id="inicio" class="hero" aria-labelledby="hero-titulo">
+      <div class="contenedor hero__grid">
+        <div class="hero__contenido">
+          <p class="hero__antetitulo">Prevención familiar · Lluvias intensas · Emergencias</p>
+          <h1 id="hero-titulo" class="hero__titulo">PREPÁRATE HOY. PROTEGE TU MAÑANA.</h1>
+          <p class="hero__descripcion">
+            Encuentra productos esenciales para afrontar emergencias, lluvias intensas y situaciones inesperadas. En VANDER STORE te ayudamos a estar preparado.
+          </p>
+          <div class="hero__botones">
+            <a href="#productos" class="boton boton--primario">EXPLORAR PRODUCTOS</a>
+            <a href="#nosotros" class="boton boton--secundario-claro">CONOCER NUESTRA TIENDA</a>
+          </div>
+          <p class="hero__nota">
+            Catálogo especializado para hogares, estudiantes y familias frente al Fenómeno El Niño, cortes eléctricos e inundaciones.
+          </p>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero__marco-imagen">
+            <img
+              src="imagenes/hero-prevencion.svg"
+              alt="Equipamiento esencial de emergencia: mochila reflectiva, botiquín de primeros auxilios, bidón de agua potable, radio portátil y linterna recargable"
+              width="640"
+              height="480"
+              class="hero__imagen"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6.4. Sección de beneficios -->
+    <section class="beneficios" aria-label="Beneficios principales de VANDER STORE">
+      <div class="contenedor">
+        <div class="beneficios__grid">
+          <article class="beneficio-card">
+            <div class="beneficio-card__icono" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+            </div>
+            <h2 class="beneficio-card__titulo">Productos para emergencias</h2>
+            <p class="beneficio-card__texto">
+              Artículos esenciales seleccionados para fortalecer la preparación del hogar ante lluvias intensas, cortes de luz e imprevistos.
+            </p>
+          </article>
+
+          <article class="beneficio-card">
+            <div class="beneficio-card__icono" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7" rx="1"></rect>
+                <rect x="14" y="3" width="7" height="7" rx="1"></rect>
+                <rect x="14" y="14" width="7" height="7" rx="1"></rect>
+                <rect x="3" y="14" width="7" height="7" rx="1"></rect>
+              </svg>
+            </div>
+            <h2 class="beneficio-card__titulo">Catálogo organizado</h2>
+            <p class="beneficio-card__texto">
+              Consulta descripciones claras, filtra por categoría, ordena precios y encuentra rápidamente el equipo que tu familia requiere.
+            </p>
+          </article>
+
+          <article class="beneficio-card">
+            <div class="beneficio-card__icono" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </div>
+            <h2 class="beneficio-card__titulo">Pedidos mediante WhatsApp</h2>
+            <p class="beneficio-card__texto">
+              Arma tu carrito con cálculo exacto en soles y genera automáticamente el resumen listo para enviar a nuestro WhatsApp oficial.
+            </p>
+          </article>
+
+          <article class="beneficio-card">
+            <div class="beneficio-card__icono" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+            </div>
+            <h2 class="beneficio-card__titulo">Atención virtual</h2>
+            <p class="beneficio-card__texto">
+              Realiza consultas desde tu computadora o teléfono móvil mediante nuestro canal directo de WhatsApp o el formulario web.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6.5. Sección de categorías -->
+    <section id="categorias" class="seccion seccion--gris" aria-labelledby="titulo-categorias">
+      <div class="contenedor">
+        <div class="encabezado-seccion encabezado-seccion--fila">
+          <div>
+            <p class="encabezado-seccion__etiqueta">Líneas de preparación</p>
+            <h2 id="titulo-categorias" class="encabezado-seccion__titulo">Explora por categorías</h2>
+            <p class="encabezado-seccion__subtitulo">
+              Selecciona una línea especializada para filtrar inmediatamente el catálogo de productos.
+            </p>
+          </div>
+          <button
+            type="button"
+            id="btn-ver-todos-categorias"
+            class="boton boton--contorno"
+            data-categoria-card="todas"
+          >
+            Mostrar todos los productos (10)
+          </button>
+        </div>
+
+        <div class="categorias__grid">
+          <!-- Categoría 1 -->
+          <article class="categoria-card" data-categoria-contenedor="Emergencia y primeros auxilios">
+            <div class="categoria-card__cabecera">
+              <div class="categoria-card__icono" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="7" width="18" height="13" rx="2"></rect>
+                  <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                  <line x1="12" y1="11" x2="12" y2="16"></line>
+                  <line x1="9.5" y1="13.5" x2="14.5" y2="13.5"></line>
+                </svg>
+              </div>
+              <span class="categoria-card__cantidad">5 artículos</span>
+            </div>
+            <h3 class="categoria-card__titulo">Emergencia y primeros auxilios</h3>
+            <p class="categoria-card__descripcion">
+              Insumos indispensables para respuesta inmediata, abrigo térmico, señalización acústica y reserva de agua potable.
+            </p>
+            <p class="categoria-card__lista">
+              Mochila de emergencia · Botiquín · Manta térmica · Silbato · Bidón para agua
+            </p>
+            <button
+              type="button"
+              class="boton boton--categoria"
+              data-categoria-card="Emergencia y primeros auxilios"
+            >
+              Filtrar esta categoría
+            </button>
+          </article>
+
+          <!-- Categoría 2 -->
+          <article class="categoria-card" data-categoria-contenedor="Energía y comunicación">
+            <div class="categoria-card__cabecera">
+              <div class="categoria-card__icono" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <span class="categoria-card__cantidad">3 artículos</span>
+            </div>
+            <h3 class="categoria-card__titulo">Energía y comunicación</h3>
+            <p class="categoria-card__descripcion">
+              Equipos autónomos para mantener iluminación segura, carga de teléfonos móviles y sintonía de boletines oficiales.
+            </p>
+            <p class="categoria-card__lista">
+              Linterna recargable · Radio de emergencia · Batería portátil
+            </p>
+            <button
+              type="button"
+              class="boton boton--categoria"
+              data-categoria-card="Energía y comunicación"
+            >
+              Filtrar esta categoría
+            </button>
+          </article>
+
+          <!-- Categoría 3 -->
+          <article class="categoria-card" data-categoria-contenedor="Protección contra lluvias">
+            <div class="categoria-card__cabecera">
+              <div class="categoria-card__icono" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M23 12a11.05 11.05 0 0 0-22 0zm-5 7a3 3 0 0 1-6 0v-7"></path>
+                </svg>
+              </div>
+              <span class="categoria-card__cantidad">2 artículos</span>
+            </div>
+            <h3 class="categoria-card__titulo">Protección contra lluvias</h3>
+            <p class="categoria-card__descripcion">
+              Indumentaria impermeable resistente para protegerse frente a precipitaciones intensas, humedad y charcos.
+            </p>
+            <p class="categoria-card__lista">
+              Poncho impermeable · Botas impermeables
+            </p>
+            <button
+              type="button"
+              class="boton boton--categoria"
+              data-categoria-card="Protección contra lluvias"
+            >
+              Filtrar esta categoría
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Catálogo de Productos -->
+    <section id="productos" class="seccion" aria-labelledby="titulo-productos">
+      <div class="contenedor">
+        <div class="encabezado-seccion">
+          <p class="encabezado-seccion__etiqueta">Catálogo completo</p>
+          <h2 id="titulo-productos" class="encabezado-seccion__titulo">Artículos de prevención y emergencia</h2>
+          <p class="encabezado-seccion__subtitulo">
+            Precios referenciales expresados en soles peruanos (S/). Agrega los artículos que necesites a tu carrito de pedido.
+          </p>
+        </div>
+
+        <!-- Barra de herramientas: Buscador, Ordenamiento y Filtros -->
+        <div class="herramientas-catalogo">
+          <div class="herramientas-catalogo__fila-superior">
+            <!-- 7.3. Buscador dinámico -->
+            <div class="campo-busqueda">
+              <label for="buscador-productos" class="sr-only">Buscar productos por nombre, descripción o categoría</label>
+              <svg class="campo-busqueda__icono" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input
+                type="search"
+                id="buscador-productos"
+                class="campo-busqueda__input"
+                placeholder="Buscar por nombre, uso o categoría (ej. mochila, agua, lluvia, linterna)..."
+                autocomplete="off"
+              >
+              <button
+                type="button"
+                id="btn-limpiar-busqueda"
+                class="campo-busqueda__limpiar"
+                aria-label="Borrar texto de búsqueda"
+                hidden
+              >
+                &times;
+              </button>
+            </div>
+
+            <!-- 7.5. Ordenamiento -->
+            <div class="campo-orden">
+              <label for="ordenar-productos" class="campo-orden__label">Ordenar por:</label>
+              <select id="ordenar-productos" class="campo-orden__select">
+                <option value="predeterminado">Orden predeterminado</option>
+                <option value="precio-asc">Precio menor a mayor</option>
+                <option value="precio-desc">Precio mayor a menor</option>
+                <option value="nombre-asc">Nombre A-Z</option>
+                <option value="nombre-desc">Nombre Z-A</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- 7.4. Filtros por categoría -->
+          <div class="herramientas-catalogo__fila-inferior">
+            <div class="filtros-grupo" id="filtros-categorias" role="group" aria-label="Filtrar catálogo por categoría">
+              <button type="button" class="filtro-btn activo" data-filtro-categoria="todas" aria-pressed="true">
+                Todas las categorías
+              </button>
+              <button type="button" class="filtro-btn" data-filtro-categoria="Emergencia y primeros auxilios" aria-pressed="false">
+                Emergencia y primeros auxilios
+              </button>
+              <button type="button" class="filtro-btn" data-filtro-categoria="Energía y comunicación" aria-pressed="false">
+                Energía y comunicación
+              </button>
+              <button type="button" class="filtro-btn" data-filtro-categoria="Protección contra lluvias" aria-pressed="false">
+                Protección contra lluvias
+              </button>
+            </div>
+
+            <p id="estado-resultados" class="estado-resultados" aria-live="polite">
+              Mostrando 10 de 10 productos
+            </p>
+          </div>
+        </div>
+
+        <!-- Rejilla de 10 productos generada dinámicamente -->
+        <div id="contenedor-productos" class="productos__grid" aria-live="polite"></div>
+
+        <!-- 7.6. Estado sin resultados -->
+        <div id="sin-resultados" class="sin-resultados" hidden>
+          <div class="sin-resultados__icono" aria-hidden="true">
+            <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              <line x1="8" y1="11" x2="14" y2="11"></line>
+            </svg>
+          </div>
+          <p class="sin-resultados__mensaje">No encontramos productos que coincidan con tu búsqueda.</p>
+          <p class="sin-resultados__ayuda">Intenta con otro término o restablece los filtros activos para explorar todo el catálogo.</p>
+          <button type="button" id="btn-limpiar-filtros" class="boton boton--primario">
+            Limpiar filtros
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. Sección NOSOTROS -->
+    <section id="nosotros" class="seccion seccion--azul" aria-labelledby="titulo-nosotros">
+      <div class="contenedor">
+        <div class="nosotros__intro">
+          <p class="encabezado-seccion__etiqueta encabezado-seccion__etiqueta--clara">Sobre VANDER STORE</p>
+          <h2 id="titulo-nosotros" class="encabezado-seccion__titulo encabezado-seccion__titulo--claro">
+            PREVENCIÓN QUE PROTEGE A LAS FAMILIAS
+          </h2>
+          <p class="nosotros__parrafo">
+            VANDER STORE nace como una propuesta de emprendimiento digital orientada a promover la cultura de prevención ante emergencias.
+          </p>
+          <p class="nosotros__parrafo">
+            Nuestro objetivo es facilitar el acceso a productos que ayuden a las familias a prepararse frente a lluvias intensas, inundaciones y otras situaciones inesperadas, como cortes eléctricos o eventos asociados al Fenómeno El Niño, a través de una plataforma ordenada y accesible para hogares, estudiantes y comunidades en zonas vulnerables.
+          </p>
+        </div>
+
+        <div class="nosotros__pilares">
+          <article class="pilar-card">
+            <h3 class="pilar-card__titulo">Misión</h3>
+            <p class="pilar-card__texto">
+              Ofrecer productos útiles y accesibles que contribuyan a fortalecer la preparación de las familias ante situaciones de emergencia.
+            </p>
+          </article>
+
+          <article class="pilar-card">
+            <h3 class="pilar-card__titulo">Visión</h3>
+            <p class="pilar-card__texto">
+              Convertirse en una propuesta comercial digital reconocida por promover la prevención y preparación familiar.
+            </p>
+          </article>
+
+          <article class="pilar-card pilar-card--valores">
+            <h3 class="pilar-card__titulo">Valores</h3>
+            <ul class="valores-lista" aria-label="Valores de VANDER STORE">
+              <li>Responsabilidad</li>
+              <li>Prevención</li>
+              <li>Confianza</li>
+              <li>Compromiso</li>
+              <li>Innovación</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 14. Sección Educativa de Prevención -->
+    <section id="prevencion" class="seccion seccion--gris" aria-labelledby="titulo-prevencion">
+      <div class="contenedor">
+        <div class="encabezado-seccion">
+          <p class="encabezado-seccion__etiqueta">Guía preventiva familiar</p>
+          <h2 id="titulo-prevencion" class="encabezado-seccion__titulo">
+            ESTAR PREPARADOS PUEDE MARCAR LA DIFERENCIA
+          </h2>
+          <p class="encabezado-seccion__subtitulo">
+            Revisa estas recomendaciones prácticas para organizar tu hogar antes de temporadas de lluvias intensas o cortes de servicios básicos.
+          </p>
+        </div>
+
+        <div class="prevencion__grid">
+          <article class="consejo-card">
+            <span class="consejo-card__numero">01</span>
+            <h3 class="consejo-card__titulo">Preparar una mochila de emergencia</h3>
+            <p class="consejo-card__texto">
+              Ubícala en un lugar accesible cerca de la salida del hogar con artículos esenciales para las primeras horas de evacuación.
+            </p>
+            <button type="button" class="enlace-accion" data-ver-producto="1">
+              Ver Mochila de emergencia &rarr;
+            </button>
+          </article>
+
+          <article class="consejo-card">
+            <span class="consejo-card__numero">02</span>
+            <h3 class="consejo-card__titulo">Mantener agua potable almacenada de forma segura</h3>
+            <p class="consejo-card__texto">
+              Guarda agua limpia en recipientes cerrados de uso alimenticio y renueva su contenido periódicamente ante eventuales cortes del suministro.
+            </p>
+            <button type="button" class="enlace-accion" data-ver-producto="8">
+              Ver Bidón para agua &rarr;
+            </button>
+          </article>
+
+          <article class="consejo-card">
+            <span class="consejo-card__numero">03</span>
+            <h3 class="consejo-card__titulo">Tener linternas y baterías disponibles</h3>
+            <p class="consejo-card__texto">
+              Evita el uso de velas durante apagones para prevenir incendios. Mantén fuentes de luz recargables y energía de respaldo para tu teléfono.
+            </p>
+            <button type="button" class="enlace-accion" data-ver-producto="3">
+              Ver Linterna recargable &rarr;
+            </button>
+          </article>
+
+          <article class="consejo-card">
+            <span class="consejo-card__numero">04</span>
+            <h3 class="consejo-card__titulo">Conservar un botiquín básico</h3>
+            <p class="consejo-card__texto">
+              Revisa periódicamente la vigencia de tus insumos básicos de curación e incluye abrigo térmico liviano dentro de un estuche limpio y seco.
+            </p>
+            <button type="button" class="enlace-accion" data-ver-producto="2">
+              Ver Botiquín de primeros auxilios &rarr;
+            </button>
+          </article>
+
+          <article class="consejo-card">
+            <span class="consejo-card__numero">05</span>
+            <h3 class="consejo-card__titulo">Mantenerse informado mediante fuentes oficiales</h3>
+            <p class="consejo-card__texto">
+              Ante lluvias o emergencias, sigue los reportes de las autoridades competentes de defensa civil y meteorología, incluso si falla el internet.
+            </p>
+            <button type="button" class="enlace-accion" data-ver-producto="4">
+              Ver Radio de emergencia &rarr;
+            </button>
+          </article>
+
+          <article class="consejo-card">
+            <span class="consejo-card__numero">06</span>
+            <h3 class="consejo-card__titulo">Identificar rutas de evacuación</h3>
+            <p class="consejo-card__texto">
+              Acuerda con tu familia puntos de encuentro seguros en zonas altas y lleva siempre un elemento sonoro para facilitar la ubicación del grupo.
+            </p>
+            <button type="button" class="enlace-accion" data-ver-producto="7">
+              Ver Silbato de emergencia &rarr;
+            </button>
+          </article>
+
+          <article class="consejo-card">
+            <span class="consejo-card__numero">07</span>
+            <h3 class="consejo-card__titulo">Proteger documentos importantes</h3>
+            <p class="consejo-card__texto">
+              Resguarda documentos de identidad, teléfonos de emergencia y copias esenciales dentro de bolsas herméticas en tu mochila preventiva.
+            </p>
+            <button type="button" class="enlace-accion" data-ver-producto="5">
+              Ver Batería portátil &rarr;
+            </button>
+          </article>
+
+          <article class="consejo-card">
+            <span class="consejo-card__numero">08</span>
+            <h3 class="consejo-card__titulo">Evitar cruzar zonas inundadas</h3>
+            <p class="consejo-card__texto">
+              Nunca intentes atravesar corrientes de agua, riberas crecidas ni calles anegadas con cables expuestos. Prioriza rutas secas y calzado impermeable.
+            </p>
+            <button type="button" class="enlace-accion" data-ver-producto="10">
+              Ver Botas impermeables &rarr;
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. Sección CONTACTO con Formspree -->
+    <section id="contacto" class="seccion" aria-labelledby="titulo-contacto">
+      <div class="contenedor contacto__grid">
+        <div class="contacto__info">
+          <p class="encabezado-seccion__etiqueta">Canales de atención virtual</p>
+          <h2 id="titulo-contacto" class="encabezado-seccion__titulo">Contáctanos</h2>
+          <p class="contacto__descripcion">
+            ¿Tienes consultas sobre nuestros artículos de preparación o sobre cómo realizar tu pedido? Escríbenos mediante el formulario o comunícate directamente a nuestros canales oficiales.
+          </p>
+
+          <div class="contacto__tarjetas">
+            <div class="canal-item">
+              <div class="canal-item__icono" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="canal-item__titulo">WhatsApp oficial</h3>
+                <p class="canal-item__dato">+51 974 436 335</p>
+                <a
+                  href="https://wa.me/51974436335?text=Hola%2C%20VANDER%20STORE.%20Me%20gustar%C3%ADa%20obtener%20informaci%C3%B3n%20sobre%20sus%20productos."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="canal-item__enlace"
+                >
+                  Iniciar conversación en WhatsApp &rarr;
+                </a>
+              </div>
+            </div>
+
+            <div class="canal-item">
+              <div class="canal-item__icono" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="canal-item__titulo">Correo electrónico oficial</h3>
+                <p class="canal-item__dato">andervigo2020@gmail.com</p>
+                <a href="mailto:andervigo2020@gmail.com" class="canal-item__enlace">
+                  Redactar correo directo &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulario conectado al endpoint real de Formspree -->
+        <div class="contacto__formulario-caja">
+          <h3 class="contacto__subtitulo-form">Envíanos una consulta</h3>
+          <form
+            id="form-contacto"
+            action="https://formspree.io/f/xaeebgoy"
+            method="POST"
+            novalidate
+          >
+            
+
+            <div class="campo-form">
+              <label for="contacto-nombre" class="campo-form__label">Nombre completo <span aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="contacto-nombre"
+                name="nombre"
+                class="campo-form__input"
+                placeholder="Ej. María Elena Paredes"
+                required
+                minlength="3"
+                maxlength="100"
+                aria-describedby="error-contacto-nombre"
+              >
+              <p id="error-contacto-nombre" class="campo-form__error" role="alert"></p>
+            </div>
+
+            <div class="campo-form">
+              <label for="contacto-correo" class="campo-form__label">Correo electrónico <span aria-hidden="true">*</span></label>
+              <input
+                type="email"
+                id="contacto-correo"
+                name="email"
+                class="campo-form__input"
+                placeholder="ejemplo@correo.com"
+                required
+                maxlength="120"
+                aria-describedby="error-contacto-correo"
+              >
+              <p id="error-contacto-correo" class="campo-form__error" role="alert"></p>
+            </div>
+
+            <div class="campo-form">
+              <label for="contacto-asunto" class="campo-form__label">Asunto <span aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="contacto-asunto"
+                name="asunto"
+                class="campo-form__input"
+                placeholder="Ej. Consulta sobre artículos para lluvia"
+                required
+                minlength="4"
+                maxlength="120"
+                aria-describedby="error-contacto-asunto"
+              >
+              <p id="error-contacto-asunto" class="campo-form__error" role="alert"></p>
+            </div>
+
+            <div class="campo-form">
+              <label for="contacto-mensaje" class="campo-form__label">Mensaje <span aria-hidden="true">*</span></label>
+              <textarea
+                id="contacto-mensaje"
+                name="mensaje"
+                class="campo-form__textarea"
+                rows="4"
+                placeholder="Escribe aquí tu consulta de manera detallada..."
+                required
+                minlength="10"
+                maxlength="1000"
+                aria-describedby="error-contacto-mensaje"
+              ></textarea>
+              <p id="error-contacto-mensaje" class="campo-form__error" role="alert"></p>
+            </div>
+
+            <!-- Estado del envío Formspree (inicial / validación / enviando / éxito / error conexión / error servidor) -->
+            <div id="estado-formulario-contacto" class="estado-envio" role="status" aria-live="polite">
+              Completa todos los campos obligatorios (*) para enviar tu consulta.
+            </div>
+
+            <button type="submit" id="btn-enviar-contacto" class="boton boton--primario boton--completo">
+              <span class="boton__spinner" id="spinner-contacto" hidden aria-hidden="true"></span>
+              <span id="texto-btn-contacto">ENVIAR MENSAJE</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 15. Pie de página -->
+  <footer class="pie-pagina">
+    <div class="contenedor">
+      <div class="pie-pagina__grid">
+        <div class="pie-pagina__marca">
+          <img
+            src="imagenes/logo.svg"
+            alt="Logotipo oficial de VANDER STORE"
+            width="210"
+            height="48"
+            class="pie-pagina__logo"
+          >
+          <p class="pie-pagina__nombre">VANDER STORE</p>
+          <p class="pie-pagina__eslogan">Preparados hoy, protegidos mañana.</p>
+          <p class="pie-pagina__descripcion">
+            Tienda virtual dedicada a facilitar el acceso a productos esenciales de prevención y preparación familiar ante lluvias intensas, inundaciones y emergencias.
+          </p>
+        </div>
+
+        <div class="pie-pagina__columna">
+          <h2 class="pie-pagina__titulo">Navegación</h2>
+          <ul class="pie-pagina__enlaces">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#categorias">Categorías</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#prevencion">Prevención</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="pie-pagina__columna">
+          <h2 class="pie-pagina__titulo">Contacto oficial</h2>
+          <ul class="pie-pagina__contacto">
+            <li>
+              <span class="pie-pagina__etiqueta">WhatsApp:</span>
+              <a
+                href="https://wa.me/51974436335?text=Hola%2C%20VANDER%20STORE.%20Me%20gustar%C3%ADa%20obtener%20informaci%C3%B3n%20sobre%20sus%20productos."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                +51 974 436 335
+              </a>
+            </li>
+            <li>
+              <span class="pie-pagina__etiqueta">Correo electrónico:</span>
+              <a href="mailto:andervigo2020@gmail.com">andervigo2020@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pie-pagina__inferior">
+        <p class="pie-pagina__aviso">
+          Aviso académico: VANDER STORE es un emprendimiento comercial simulado desarrollado exclusivamente con fines académicos. Los precios mostrados son referenciales.
+        </p>
+        <p class="pie-pagina__derechos">
+          &copy; 2026 VANDER STORE. Todos los derechos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 8. Modal de Detalles del Producto -->
+  <div
+    id="modal-detalle"
+    class="modal-overlay"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-detalle-titulo"
+    hidden
+  >
+    <div class="modal-ventana modal-ventana--detalle">
+      <button
+        type="button"
+        id="btn-cerrar-detalle"
+        class="modal-cerrar"
+        aria-label="Cerrar ventana de detalles del producto"
+      >
+        &times;
+      </button>
+
+      <div class="detalle-producto">
+        <div class="detalle-producto__imagen-caja" id="detalle-imagen-contenedor"></div>
+
+        <div class="detalle-producto__contenido">
+          <p id="detalle-categoria" class="detalle-producto__categoria"></p>
+          <h2 id="modal-detalle-titulo" class="detalle-producto__titulo"></h2>
+          <p id="detalle-precio" class="detalle-producto__precio"></p>
+          <p id="detalle-descripcion" class="detalle-producto__descripcion"></p>
+
+          <div class="detalle-producto__ficha">
+            <h3 class="detalle-producto__subtitulo">Características principales</h3>
+            <ul id="detalle-caracteristicas" class="detalle-producto__lista"></ul>
+          </div>
+
+          <div class="detalle-producto__acciones">
+            <button type="button" id="btn-agregar-desde-modal" class="boton boton--primario boton--completo">
+              AGREGAR AL CARRITO
+            </button>
+            <button type="button" id="btn-seguir-comprando-modal" class="boton boton--contorno boton--completo">
+              Seguir viendo el catálogo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 9. Panel / Cajón del Carrito de Compras -->
+  <div
+    id="panel-carrito-overlay"
+    class="carrito-overlay"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="titulo-carrito"
+    hidden
+  >
+    <aside class="carrito-panel">
+      <div class="carrito-panel__cabecera">
+        <div>
+          <h2 id="titulo-carrito" class="carrito-panel__titulo">Tu carrito de compra</h2>
+          <p id="carrito-unidades-resumen" class="carrito-panel__subtitulo">0 artículos seleccionados</p>
+        </div>
+        <button
+          type="button"
+          id="btn-cerrar-carrito"
+          class="modal-cerrar"
+          aria-label="Cerrar carrito de compras"
+        >
+          &times;
+        </button>
+      </div>
+
+      <!-- 9.5. Estado carrito vacío -->
+      <div id="carrito-vacio" class="carrito-vacio">
+        <div class="carrito-vacio__icono" aria-hidden="true">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+        </div>
+        <p class="carrito-vacio__texto">
+          Tu carrito está vacío. Explora nuestros productos y encuentra lo que necesitas.
+        </p>
+        <button type="button" id="btn-explorar-desde-carrito" class="boton boton--primario">
+          EXPLORAR PRODUCTOS
+        </button>
+      </div>
+
+      <!-- Lista y resumen cuando existen productos -->
+      <div id="carrito-con-productos" class="carrito-contenido" hidden>
+        <ul id="lista-carrito" class="carrito-lista" aria-label="Productos en el carrito"></ul>
+
+        <div class="carrito-panel__pie">
+          <div class="carrito-total-fila">
+            <span class="carrito-total-fila__etiqueta">Total general</span>
+            <strong id="carrito-total" class="carrito-total-fila__monto">S/ 0.00</strong>
+          </div>
+          <p class="carrito-panel__nota">
+            Importes calculados automáticamente. En el siguiente paso completarás los datos para generar tu pedido por WhatsApp.
+          </p>
+          <div class="carrito-panel__botones">
+            <button type="button" id="btn-finalizar-compra" class="boton boton--primario boton--completo">
+              FINALIZAR COMPRA
+            </button>
+            <button type="button" id="btn-vaciar-carrito" class="boton boton--peligro-suave boton--completo">
+              Vaciar carrito
+            </button>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- 10 & 11. Modal del Proceso de Compra y Resumen para WhatsApp -->
+  <div
+    id="modal-compra"
+    class="modal-overlay"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="titulo-modal-compra"
+    hidden
+  >
+    <div class="modal-ventana modal-ventana--compra">
+      <button
+        type="button"
+        id="btn-cerrar-compra"
+        class="modal-cerrar"
+        aria-label="Cerrar proceso de compra"
+      >
+        &times;
+      </button>
+
+      <div class="compra-cabecera">
+        <p class="compra-cabecera__paso" id="indicador-paso-compra">Paso 1 de 2 · Datos del pedido</p>
+        <h2 id="titulo-modal-compra" class="compra-cabecera__titulo">Preparar pedido para WhatsApp</h2>
+      </div>
+
+      <!-- Paso 1: Formulario de datos del cliente -->
+      <div id="paso-datos-pedido">
+        <p class="compra-intro">
+          Ingresa los datos necesarios para coordinar tu pedido. No solicitamos tarjetas bancarias ni contraseñas.
+        </p>
+
+        <form id="form-pedido" novalidate>
+          <div class="campo-form">
+            <label for="pedido-nombre" class="campo-form__label">Nombre completo <span aria-hidden="true">*</span></label>
+            <input
+              type="text"
+              id="pedido-nombre"
+              name="clienteNombre"
+              class="campo-form__input"
+              placeholder="Ej. Carlos Alberto Quispe"
+              required
+              minlength="3"
+              maxlength="100"
+              aria-describedby="error-pedido-nombre"
+            >
+            <p id="error-pedido-nombre" class="campo-form__error" role="alert"></p>
+          </div>
+
+          <div class="campo-form">
+            <label for="pedido-telefono" class="campo-form__label">Número de contacto <span aria-hidden="true">*</span></label>
+            <input
+              type="tel"
+              id="pedido-telefono"
+              name="clienteTelefono"
+              class="campo-form__input"
+              placeholder="Ej. 987 654 321"
+              required
+              maxlength="20"
+              aria-describedby="error-pedido-telefono"
+            >
+            <p id="error-pedido-telefono" class="campo-form__error" role="alert"></p>
+          </div>
+
+          <div class="campo-form">
+            <label for="pedido-referencia" class="campo-form__label">Zona o referencia de entrega <span aria-hidden="true">*</span></label>
+            <input
+              type="text"
+              id="pedido-referencia"
+              name="clienteReferencia"
+              class="campo-form__input"
+              placeholder="Ej. Distrito, urbanización o punto de referencia cercano"
+              required
+              minlength="4"
+              maxlength="160"
+              aria-describedby="error-pedido-referencia"
+            >
+            <p id="error-pedido-referencia" class="campo-form__error" role="alert"></p>
+          </div>
+
+          <div class="campo-form">
+            <label for="pedido-observaciones" class="campo-form__label">Observaciones adicionales (opcional)</label>
+            <textarea
+              id="pedido-observaciones"
+              name="clienteObservaciones"
+              class="campo-form__textarea"
+              rows="2"
+              maxlength="300"
+              placeholder="Ej. Horario preferido de contacto o indicación adicional"
+              aria-describedby="error-pedido-observaciones"
+            ></textarea>
+            <p id="error-pedido-observaciones" class="campo-form__error" role="alert"></p>
+          </div>
+
+          <div class="compra-acciones">
+            <button type="button" id="btn-volver-carrito" class="boton boton--contorno">
+              Volver al carrito
+            </button>
+            <button type="submit" id="btn-continuar-resumen" class="boton boton--primario">
+              Ver resumen de compra
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Paso 2: Resumen completo de compra y envío directo a WhatsApp -->
+      <div id="paso-resumen-pedido" hidden>
+        <p class="compra-intro">
+          Verifica que tus datos y productos sean correctos antes de abrir WhatsApp para enviar el pedido.
+        </p>
+
+        <div class="resumen-bloque">
+          <h3 class="resumen-bloque__titulo">Datos del solicitante</h3>
+          <dl class="resumen-datos">
+            <div class="resumen-datos__par">
+              <dt>Cliente:</dt>
+              <dd id="resumen-cliente-nombre"></dd>
+            </div>
+            <div class="resumen-datos__par">
+              <dt>Contacto:</dt>
+              <dd id="resumen-cliente-telefono"></dd>
+            </div>
+            <div class="resumen-datos__par">
+              <dt>Referencia de entrega:</dt>
+              <dd id="resumen-cliente-referencia"></dd>
+            </div>
+            <div class="resumen-datos__par">
+              <dt>Observaciones:</dt>
+              <dd id="resumen-cliente-observaciones"></dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="resumen-bloque">
+          <h3 class="resumen-bloque__titulo">Productos seleccionados</h3>
+          <ul id="resumen-lista-productos" class="resumen-productos"></ul>
+          <div class="resumen-total">
+            <span>Total general a pagar</span>
+            <strong id="resumen-total-general">S/ 0.00</strong>
+          </div>
+        </div>
+
+        <div class="compra-acciones compra-acciones--resumen">
+          <button type="button" id="btn-modificar-datos" class="boton boton--contorno">
+            Regresar y modificar datos
+          </button>
+          <a
+            id="enlace-enviar-whatsapp"
+            href="https://wa.me/51974436335"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="boton boton--whatsapp"
+          >
+            <svg class="icono-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+            </svg>
+            <span>ENVIAR PEDIDO POR WHATSAPP</span>
+          </a>
+        </div>
+
+        <div id="aviso-post-whatsapp" class="aviso-whatsapp" hidden>
+          <p>
+            <strong>Se abrió WhatsApp con tu pedido preparado.</strong> Revisa el texto en la aplicación de WhatsApp y presiona el botón <strong>Enviar</strong> para que VANDER STORE reciba tu solicitud. Tu carrito permanece guardado por seguridad; si ya enviaste el mensaje, puedes vaciarlo manualmente.
+          </p>
+          <button type="button" id="btn-vaciar-tras-envio" class="boton boton--contorno boton--pequeno">
+            Ya envié mi mensaje en WhatsApp, vaciar carrito
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenedor accesible para notificaciones breves -->
+  <div id="contenedor-notificaciones" class="notificaciones" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- 11.2. Botón flotante de WhatsApp -->
+  <a
+    href="https://wa.me/51974436335?text=Hola%2C%20VANDER%20STORE.%20Me%20gustar%C3%ADa%20obtener%20informaci%C3%B3n%20sobre%20sus%20productos."
+    class="whatsapp-flotante"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Consultar por WhatsApp oficial de VANDER STORE"
+    title="Consultar por WhatsApp"
+  >
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+    </svg>
+    <span class="whatsapp-flotante__texto">WhatsApp</span>
+  </a>
+</body>
+</html>
